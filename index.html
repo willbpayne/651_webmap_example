@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_913ecd7b352093bef14c84eddb9cd6ac {
+                    position: relative;
+                    width: 900.0px;
+                    height: 850.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_913ecd7b352093bef14c84eddb9cd6ac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_913ecd7b352093bef14c84eddb9cd6ac = L.map(
+                "map_913ecd7b352093bef14c84eddb9cd6ac",
+                {
+                    center: [40.18625506916122, -74.55161826002009],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4b9159b00f9ef029eb18ab59578c4f50 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var marker_027c98429dd8a046f0f49f63abd80b3d = L.marker(
+                [40.690754, -75.201923],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_517a27309c423294255819d255c92dc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_027c98429dd8a046f0f49f63abd80b3d.setIcon(icon_517a27309c423294255819d255c92dc0);
+        
+    
+        var popup_9038241dac8981e565b164ddeac4c96b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b3b9580e5bf1948a9b6a83f6cd37ffc = $(`<div id="html_3b3b9580e5bf1948a9b6a83f6cd37ffc" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Apothecarium Dispensary<br><b>Address:</b>55 South Main St.<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_9038241dac8981e565b164ddeac4c96b.setContent(html_3b3b9580e5bf1948a9b6a83f6cd37ffc);
+        
+
+        marker_027c98429dd8a046f0f49f63abd80b3d.bindPopup(popup_9038241dac8981e565b164ddeac4c96b)
+        ;
+
+        
+    
+    
+            marker_027c98429dd8a046f0f49f63abd80b3d.bindTooltip(
+                `<div>
+                     Apothecarium Dispensary
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec1f36d4bf4af3a5692e465c53720e03 = L.marker(
+                [40.720772, -74.269284],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_a18bcb6e1f04a46d87fee54b26866f65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ec1f36d4bf4af3a5692e465c53720e03.setIcon(icon_a18bcb6e1f04a46d87fee54b26866f65);
+        
+    
+        var popup_ae9cbc05e003af3857249550ed154184 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2861f6e8178e04e02a6d713f97772ce = $(`<div id="html_a2861f6e8178e04e02a6d713f97772ce" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Apothecarium Dispensary<br><b>Address:</b>1865 Springfield Avenue<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_ae9cbc05e003af3857249550ed154184.setContent(html_a2861f6e8178e04e02a6d713f97772ce);
+        
+
+        marker_ec1f36d4bf4af3a5692e465c53720e03.bindPopup(popup_ae9cbc05e003af3857249550ed154184)
+        ;
+
+        
+    
+    
+            marker_ec1f36d4bf4af3a5692e465c53720e03.bindTooltip(
+                `<div>
+                     Apothecarium Dispensary
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a303d2999e4301226104e755de9a88c2 = L.marker(
+                [40.882884, -74.066849],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_cdc093b36f2f989e7b3adc22fcfc905d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a303d2999e4301226104e755de9a88c2.setIcon(icon_cdc093b36f2f989e7b3adc22fcfc905d);
+        
+    
+        var popup_1005fcb0bda202911c1ea42ee7e836ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e3af6f1fec189621b64873121704d45 = $(`<div id="html_7e3af6f1fec189621b64873121704d45" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Apothecarium Dispensary<br><b>Address:</b>200 Nj-17<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_1005fcb0bda202911c1ea42ee7e836ea.setContent(html_7e3af6f1fec189621b64873121704d45);
+        
+
+        marker_a303d2999e4301226104e755de9a88c2.bindPopup(popup_1005fcb0bda202911c1ea42ee7e836ea)
+        ;
+
+        
+    
+    
+            marker_a303d2999e4301226104e755de9a88c2.bindTooltip(
+                `<div>
+                     Apothecarium Dispensary
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03a9abe50bc18cf11a9add18544e5c11 = L.marker(
+                [40.903839, -74.071966],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_481245a88f3adf1bd3ac9edf0e20f0e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_03a9abe50bc18cf11a9add18544e5c11.setIcon(icon_481245a88f3adf1bd3ac9edf0e20f0e0);
+        
+    
+        var popup_2f5215fe254661ae8ea18049a29a2f3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c88a20a18863cbef9a9f31bce0c8b817 = $(`<div id="html_c88a20a18863cbef9a9f31bce0c8b817" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Ascend<br><b>Address:</b>174 Route 17 North<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_2f5215fe254661ae8ea18049a29a2f3e.setContent(html_c88a20a18863cbef9a9f31bce0c8b817);
+        
+
+        marker_03a9abe50bc18cf11a9add18544e5c11.bindPopup(popup_2f5215fe254661ae8ea18049a29a2f3e)
+        ;
+
+        
+    
+    
+            marker_03a9abe50bc18cf11a9add18544e5c11.bindTooltip(
+                `<div>
+                     Ascend
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_741c59d12440db8fd93cb451251a62fe = L.marker(
+                [40.859574, -73.972432],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_8acb6102b756b374bd52f3536218d23b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_741c59d12440db8fd93cb451251a62fe.setIcon(icon_8acb6102b756b374bd52f3536218d23b);
+        
+    
+        var popup_13d3541ccc33a384f8bc0a2395f47207 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfaa0583a1d7487722c1e0b1695e2f90 = $(`<div id="html_dfaa0583a1d7487722c1e0b1695e2f90" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Ascend<br><b>Address:</b>461-469 West State Street<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_13d3541ccc33a384f8bc0a2395f47207.setContent(html_dfaa0583a1d7487722c1e0b1695e2f90);
+        
+
+        marker_741c59d12440db8fd93cb451251a62fe.bindPopup(popup_13d3541ccc33a384f8bc0a2395f47207)
+        ;
+
+        
+    
+    
+            marker_741c59d12440db8fd93cb451251a62fe.bindTooltip(
+                `<div>
+                     Ascend
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b1718219414f8c72ac38e3bb4d0aa3c = L.marker(
+                [40.812663, -74.216017],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_4bcff71512032ef5f465ffff61b68e17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6b1718219414f8c72ac38e3bb4d0aa3c.setIcon(icon_4bcff71512032ef5f465ffff61b68e17);
+        
+    
+        var popup_7954f8b48239c56e5e6514ac08343e16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a57ab5b2a2a8c684a65399dac5c7803 = $(`<div id="html_2a57ab5b2a2a8c684a65399dac5c7803" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Ascend<br><b>Address:</b>395 Bloomfield Ave<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_7954f8b48239c56e5e6514ac08343e16.setContent(html_2a57ab5b2a2a8c684a65399dac5c7803);
+        
+
+        marker_6b1718219414f8c72ac38e3bb4d0aa3c.bindPopup(popup_7954f8b48239c56e5e6514ac08343e16)
+        ;
+
+        
+    
+    
+            marker_6b1718219414f8c72ac38e3bb4d0aa3c.bindTooltip(
+                `<div>
+                     Ascend
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fecac1e80587d97ceab92828795e5ea = L.marker(
+                [39.357377, -74.42365],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_311e0233754946a69cd84cf15230fa75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9fecac1e80587d97ceab92828795e5ea.setIcon(icon_311e0233754946a69cd84cf15230fa75);
+        
+    
+        var popup_8b717842ee20a5674f373bbba674812b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42346a41a12492f21917580098c4423b = $(`<div id="html_42346a41a12492f21917580098c4423b" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Botanist, The<br><b>Address:</b>1301 Boardwalk<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_8b717842ee20a5674f373bbba674812b.setContent(html_42346a41a12492f21917580098c4423b);
+        
+
+        marker_9fecac1e80587d97ceab92828795e5ea.bindPopup(popup_8b717842ee20a5674f373bbba674812b)
+        ;
+
+        
+    
+    
+            marker_9fecac1e80587d97ceab92828795e5ea.bindTooltip(
+                `<div>
+                     Botanist, The
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b58fcd752ecc887c85a096267ef597a = L.marker(
+                [39.71909, -75.022425],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_6ff5cda8c88d39e13b2a24736f0b8704 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9b58fcd752ecc887c85a096267ef597a.setIcon(icon_6ff5cda8c88d39e13b2a24736f0b8704);
+        
+    
+        var popup_dfaaa9f0a20ea72b58ff179430051f5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57d810a47a98881b7467bf62ef48fcd7 = $(`<div id="html_57d810a47a98881b7467bf62ef48fcd7" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Botanist, The<br><b>Address:</b>2090 N Blackhorse Pike<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_dfaaa9f0a20ea72b58ff179430051f5c.setContent(html_57d810a47a98881b7467bf62ef48fcd7);
+        
+
+        marker_9b58fcd752ecc887c85a096267ef597a.bindPopup(popup_dfaaa9f0a20ea72b58ff179430051f5c)
+        ;
+
+        
+    
+    
+            marker_9b58fcd752ecc887c85a096267ef597a.bindTooltip(
+                `<div>
+                     Botanist, The
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e0b64ab2f5db576e5c12b48cbc5f6ad = L.marker(
+                [39.41918, -74.554995],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_f6d2ed2ed4407f0a11e8a4b445ae22dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6e0b64ab2f5db576e5c12b48cbc5f6ad.setIcon(icon_f6d2ed2ed4407f0a11e8a4b445ae22dd);
+        
+    
+        var popup_0936c431db72155e12e05403ac663ec8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46c5d0d21061d17647c8f0e7afecfff9 = $(`<div id="html_46c5d0d21061d17647c8f0e7afecfff9" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Botanist, The<br><b>Address:</b>100 Century Drive<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_0936c431db72155e12e05403ac663ec8.setContent(html_46c5d0d21061d17647c8f0e7afecfff9);
+        
+
+        marker_6e0b64ab2f5db576e5c12b48cbc5f6ad.bindPopup(popup_0936c431db72155e12e05403ac663ec8)
+        ;
+
+        
+    
+    
+            marker_6e0b64ab2f5db576e5c12b48cbc5f6ad.bindTooltip(
+                `<div>
+                     Botanist, The
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a985839168facda790343e58f3a9c2d8 = L.marker(
+                [40.334285, -74.486746],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_66970d1bb9032edb5160de4b8a61cf3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a985839168facda790343e58f3a9c2d8.setIcon(icon_66970d1bb9032edb5160de4b8a61cf3f);
+        
+    
+        var popup_538e8baef6434e520a8e9f24056c4cb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0f55758918f9a95192db8676df18275 = $(`<div id="html_f0f55758918f9a95192db8676df18275" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Breakwater ATC<br><b>Address:</b>2 Corporate Drive, Suite E<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_538e8baef6434e520a8e9f24056c4cb9.setContent(html_f0f55758918f9a95192db8676df18275);
+        
+
+        marker_a985839168facda790343e58f3a9c2d8.bindPopup(popup_538e8baef6434e520a8e9f24056c4cb9)
+        ;
+
+        
+    
+    
+            marker_a985839168facda790343e58f3a9c2d8.bindTooltip(
+                `<div>
+                     Breakwater ATC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a117d21260cbc1ace78dadf6ab34d72f = L.marker(
+                [40.660878, -74.269464],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_95b131a05696ab31c5754a1e24dc5786 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a117d21260cbc1ace78dadf6ab34d72f.setIcon(icon_95b131a05696ab31c5754a1e24dc5786);
+        
+    
+        var popup_054f161ae122a29d9e99fd7326fc38b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a088c7cb60b3ca721d839b659a1c9e2 = $(`<div id="html_8a088c7cb60b3ca721d839b659a1c9e2" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Breakwater Wellness and Treatment ATC<br><b>Address:</b>154 West Westfield Ave<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_054f161ae122a29d9e99fd7326fc38b4.setContent(html_8a088c7cb60b3ca721d839b659a1c9e2);
+        
+
+        marker_a117d21260cbc1ace78dadf6ab34d72f.bindPopup(popup_054f161ae122a29d9e99fd7326fc38b4)
+        ;
+
+        
+    
+    
+            marker_a117d21260cbc1ace78dadf6ab34d72f.bindTooltip(
+                `<div>
+                     Breakwater Wellness and Treatment ATC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b7e9e45697de98a5a93060e2b1ac67f = L.marker(
+                [39.832875, -75.101788],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_bb419032f26e334381aa0cb48ef64e3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4b7e9e45697de98a5a93060e2b1ac67f.setIcon(icon_bb419032f26e334381aa0cb48ef64e3d);
+        
+    
+        var popup_063812c13683be27c59436511b35a23b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fba211a03782e25163b318b268ba83a = $(`<div id="html_5fba211a03782e25163b318b268ba83a" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Cannabist, The<br><b>Address:</b>1692 Clements Bridge Rd<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_063812c13683be27c59436511b35a23b.setContent(html_5fba211a03782e25163b318b268ba83a);
+        
+
+        marker_4b7e9e45697de98a5a93060e2b1ac67f.bindPopup(popup_063812c13683be27c59436511b35a23b)
+        ;
+
+        
+    
+    
+            marker_4b7e9e45697de98a5a93060e2b1ac67f.bindTooltip(
+                `<div>
+                     Cannabist, The
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ab02fc9e7da4637b2c878eb60fc8e6c = L.marker(
+                [39.502548, -75.041869],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_3ba2b4b2242e4daa477c88d4f9e64101 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0ab02fc9e7da4637b2c878eb60fc8e6c.setIcon(icon_3ba2b4b2242e4daa477c88d4f9e64101);
+        
+    
+        var popup_89558111ea708973fcc19b566f1d878f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cac4eb12760c295976499aa688abcca2 = $(`<div id="html_cac4eb12760c295976499aa688abcca2" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Cannabist, The<br><b>Address:</b>1062 North Delsea Drive<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_89558111ea708973fcc19b566f1d878f.setContent(html_cac4eb12760c295976499aa688abcca2);
+        
+
+        marker_0ab02fc9e7da4637b2c878eb60fc8e6c.bindPopup(popup_89558111ea708973fcc19b566f1d878f)
+        ;
+
+        
+    
+    
+            marker_0ab02fc9e7da4637b2c878eb60fc8e6c.bindTooltip(
+                `<div>
+                     Cannabist, The
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94859b4bf875942f892e819c49a5de5d = L.marker(
+                [40.148734, -74.700642],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_8aa833d09f9024df7c2c8de9fed12b0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_94859b4bf875942f892e819c49a5de5d.setIcon(icon_8aa833d09f9024df7c2c8de9fed12b0d);
+        
+    
+        var popup_c55062a6a2071daf754aa8b7797b2e06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_547c439ee14a27257b06789bfd5deaec = $(`<div id="html_547c439ee14a27257b06789bfd5deaec" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Curaleaf<br><b>Address:</b>191 Rte 130<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_c55062a6a2071daf754aa8b7797b2e06.setContent(html_547c439ee14a27257b06789bfd5deaec);
+        
+
+        marker_94859b4bf875942f892e819c49a5de5d.bindPopup(popup_c55062a6a2071daf754aa8b7797b2e06)
+        ;
+
+        
+    
+    
+            marker_94859b4bf875942f892e819c49a5de5d.bindTooltip(
+                `<div>
+                     Curaleaf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7aa5f9a4937a6f0f8164acacbe84cd89 = L.marker(
+                [40.040754, -74.912595],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_816c7016a41b3dbd9583d904b808c75b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7aa5f9a4937a6f0f8164acacbe84cd89.setIcon(icon_816c7016a41b3dbd9583d904b808c75b);
+        
+    
+        var popup_9cff1766645cc70150fcb6a91be994e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b442e40857fbe3d1bd286f5371b5dc4f = $(`<div id="html_b442e40857fbe3d1bd286f5371b5dc4f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Curaleaf<br><b>Address:</b>4237 Us-130 South<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_9cff1766645cc70150fcb6a91be994e0.setContent(html_b442e40857fbe3d1bd286f5371b5dc4f);
+        
+
+        marker_7aa5f9a4937a6f0f8164acacbe84cd89.bindPopup(popup_9cff1766645cc70150fcb6a91be994e0)
+        ;
+
+        
+    
+    
+            marker_7aa5f9a4937a6f0f8164acacbe84cd89.bindTooltip(
+                `<div>
+                     Curaleaf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebbc32307e78c6522c1a03ff456ec5a8 = L.marker(
+                [39.865436, -75.103077],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_385f0464609ba6a908528629ac74bdc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ebbc32307e78c6522c1a03ff456ec5a8.setIcon(icon_385f0464609ba6a908528629ac74bdc5);
+        
+    
+        var popup_a3a27e9ab473b3fdbefe54b0267707ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_590a63d16d45a50f15f9e2aa0fd02467 = $(`<div id="html_590a63d16d45a50f15f9e2aa0fd02467" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Curaleaf<br><b>Address:</b>640 Creek Road<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_a3a27e9ab473b3fdbefe54b0267707ea.setContent(html_590a63d16d45a50f15f9e2aa0fd02467);
+        
+
+        marker_ebbc32307e78c6522c1a03ff456ec5a8.bindPopup(popup_a3a27e9ab473b3fdbefe54b0267707ea)
+        ;
+
+        
+    
+    
+            marker_ebbc32307e78c6522c1a03ff456ec5a8.bindTooltip(
+                `<div>
+                     Curaleaf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60daac7e99e50cf0b9998411b91a1eb8 = L.marker(
+                [40.56847, -74.295474],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_903ac7afa8f002ea30e7e96c35cc77e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_60daac7e99e50cf0b9998411b91a1eb8.setIcon(icon_903ac7afa8f002ea30e7e96c35cc77e0);
+        
+    
+        var popup_3c481a5de0bd62da74297e1d9c2017fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5254452d499210e0621cc48d112d75f = $(`<div id="html_b5254452d499210e0621cc48d112d75f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Garden State Dispensary (Ayr Wellness)<br><b>Address:</b>950 Us Highway 1 North<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_3c481a5de0bd62da74297e1d9c2017fd.setContent(html_b5254452d499210e0621cc48d112d75f);
+        
+
+        marker_60daac7e99e50cf0b9998411b91a1eb8.bindPopup(popup_3c481a5de0bd62da74297e1d9c2017fd)
+        ;
+
+        
+    
+    
+            marker_60daac7e99e50cf0b9998411b91a1eb8.bindTooltip(
+                `<div>
+                     Garden State Dispensary (Ayr Wellness)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eee57e5241753e42e79f6bf87d64d1ae = L.marker(
+                [40.305806, -74.060734],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_883da24ce8b2f3d3e6f1598a1110de44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_eee57e5241753e42e79f6bf87d64d1ae.setIcon(icon_883da24ce8b2f3d3e6f1598a1110de44);
+        
+    
+        var popup_4f004f576c5532e37f20717bfa9a96f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7b601cc1d3f54f4591054a20e3d17f1 = $(`<div id="html_b7b601cc1d3f54f4591054a20e3d17f1" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Garden State Dispensary (Ayr Wellness)<br><b>Address:</b>59 Nj-35<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_4f004f576c5532e37f20717bfa9a96f1.setContent(html_b7b601cc1d3f54f4591054a20e3d17f1);
+        
+
+        marker_eee57e5241753e42e79f6bf87d64d1ae.bindPopup(popup_4f004f576c5532e37f20717bfa9a96f1)
+        ;
+
+        
+    
+    
+            marker_eee57e5241753e42e79f6bf87d64d1ae.bindTooltip(
+                `<div>
+                     Garden State Dispensary (Ayr Wellness)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05abd6cc4fdf033b5d8d39acc88f9df7 = L.marker(
+                [40.689168, -74.301325],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_46d9fab21c77de707d80c45dbe6a770f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_05abd6cc4fdf033b5d8d39acc88f9df7.setIcon(icon_46d9fab21c77de707d80c45dbe6a770f);
+        
+    
+        var popup_24a6416319ddd0e7152b4d748e959932 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8253dd8cf2ea7030355f9b0438e35396 = $(`<div id="html_8253dd8cf2ea7030355f9b0438e35396" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Garden State Dispensary (Ayr Wellness)<br><b>Address:</b>2536 Rt 22<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_24a6416319ddd0e7152b4d748e959932.setContent(html_8253dd8cf2ea7030355f9b0438e35396);
+        
+
+        marker_05abd6cc4fdf033b5d8d39acc88f9df7.bindPopup(popup_24a6416319ddd0e7152b4d748e959932)
+        ;
+
+        
+    
+    
+            marker_05abd6cc4fdf033b5d8d39acc88f9df7.bindTooltip(
+                `<div>
+                     Garden State Dispensary (Ayr Wellness)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0828ebb6f0878011aefd459c11ebe0b8 = L.marker(
+                [40.77525, -74.086556],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_c2e1a74646e8bb10d09805df8e0f7c61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0828ebb6f0878011aefd459c11ebe0b8.setIcon(icon_c2e1a74646e8bb10d09805df8e0f7c61);
+        
+    
+        var popup_5f8a483cb46faf75338078e0f33d2621 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5ffec4dc92c7e3b86529d752c618d64 = $(`<div id="html_b5ffec4dc92c7e3b86529d752c618d64" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Harmony Dispensary<br><b>Address:</b>600 Meadowlands Parkway, Suite 15<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_5f8a483cb46faf75338078e0f33d2621.setContent(html_b5ffec4dc92c7e3b86529d752c618d64);
+        
+
+        marker_0828ebb6f0878011aefd459c11ebe0b8.bindPopup(popup_5f8a483cb46faf75338078e0f33d2621)
+        ;
+
+        
+    
+    
+            marker_0828ebb6f0878011aefd459c11ebe0b8.bindTooltip(
+                `<div>
+                     Harmony Dispensary
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1263545bb8b2c7411bd6bdf09e3e406 = L.marker(
+                [40.248342, -74.770549],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_18dcb6a77667b8c511331e74e5748551 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a1263545bb8b2c7411bd6bdf09e3e406.setIcon(icon_18dcb6a77667b8c511331e74e5748551);
+        
+    
+        var popup_6d8720fac7d295bf3ccc1b016e7e20e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7076326ab5ae8ace0ab1ed1aa20a8df3 = $(`<div id="html_7076326ab5ae8ace0ab1ed1aa20a8df3" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Justice Grown<br><b>Address:</b>1761 North Olden Avenue<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_6d8720fac7d295bf3ccc1b016e7e20e1.setContent(html_7076326ab5ae8ace0ab1ed1aa20a8df3);
+        
+
+        marker_a1263545bb8b2c7411bd6bdf09e3e406.bindPopup(popup_6d8720fac7d295bf3ccc1b016e7e20e1)
+        ;
+
+        
+    
+    
+            marker_a1263545bb8b2c7411bd6bdf09e3e406.bindTooltip(
+                `<div>
+                     Justice Grown
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61d6646a3e978c0279a3f344827a2ff0 = L.marker(
+                [39.358975, -74.427559],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_b3f158973f4090e4dd8026d1a7fbea27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_61d6646a3e978c0279a3f344827a2ff0.setIcon(icon_b3f158973f4090e4dd8026d1a7fbea27);
+        
+    
+        var popup_53a74a12061d9c1f4030398395527465 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e6eff6a45c2a938a9828329064e193c = $(`<div id="html_4e6eff6a45c2a938a9828329064e193c" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MPX NJ<br><b>Address:</b>157-159 S. New York Avenue<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_53a74a12061d9c1f4030398395527465.setContent(html_4e6eff6a45c2a938a9828329064e193c);
+        
+
+        marker_61d6646a3e978c0279a3f344827a2ff0.bindPopup(popup_53a74a12061d9c1f4030398395527465)
+        ;
+
+        
+    
+    
+            marker_61d6646a3e978c0279a3f344827a2ff0.bindTooltip(
+                `<div>
+                     MPX NJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dc6b78292c7abeff38759ff03f52674 = L.marker(
+                [40.936401, -74.141912],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_b8b95f2683c67e9dcf6465d2fae1cc66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7dc6b78292c7abeff38759ff03f52674.setIcon(icon_b8b95f2683c67e9dcf6465d2fae1cc66);
+        
+    
+        var popup_e9f23aa42c5dbd6be4adffd3ee2e5fbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54d16e69b596869fcf55137c7fc95657 = $(`<div id="html_54d16e69b596869fcf55137c7fc95657" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RISE<br><b>Address:</b>196 3Rd Avenue #3-C<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_e9f23aa42c5dbd6be4adffd3ee2e5fbf.setContent(html_54d16e69b596869fcf55137c7fc95657);
+        
+
+        marker_7dc6b78292c7abeff38759ff03f52674.bindPopup(popup_e9f23aa42c5dbd6be4adffd3ee2e5fbf)
+        ;
+
+        
+    
+    
+            marker_7dc6b78292c7abeff38759ff03f52674.bindTooltip(
+                `<div>
+                     RISE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f615cee27bad888e20af4bcc17a1e1ac = L.marker(
+                [40.92415, -74.08424],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_5bfe4995abcae94ca17061d0d2de977d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f615cee27bad888e20af4bcc17a1e1ac.setIcon(icon_5bfe4995abcae94ca17061d0d2de977d);
+        
+    
+        var popup_a075b4ee0965e3fbdb9a92d33cf8477c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71094c11e338d00e8b9985a7111e4d7e = $(`<div id="html_71094c11e338d00e8b9985a7111e4d7e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RISE<br><b>Address:</b>145 Rt. 4 West, Unit #2<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_a075b4ee0965e3fbdb9a92d33cf8477c.setContent(html_71094c11e338d00e8b9985a7111e4d7e);
+        
+
+        marker_f615cee27bad888e20af4bcc17a1e1ac.bindPopup(popup_a075b4ee0965e3fbdb9a92d33cf8477c)
+        ;
+
+        
+    
+    
+            marker_f615cee27bad888e20af4bcc17a1e1ac.bindTooltip(
+                `<div>
+                     RISE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60c75af11917b0f0656b8f83ec96849e = L.marker(
+                [40.77544, -74.186788],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_e7d8cca0c22ed9facbe50bd4398ed83d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_60c75af11917b0f0656b8f83ec96849e.setIcon(icon_e7d8cca0c22ed9facbe50bd4398ed83d);
+        
+    
+        var popup_11558040afd47d8c0ab98c1fe047d394 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6599d2cb0bebdbe4f817f08ad22dbf4 = $(`<div id="html_e6599d2cb0bebdbe4f817f08ad22dbf4" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RISE<br><b>Address:</b>26-48 Bloomfield Ave<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_11558040afd47d8c0ab98c1fe047d394.setContent(html_e6599d2cb0bebdbe4f817f08ad22dbf4);
+        
+
+        marker_60c75af11917b0f0656b8f83ec96849e.bindPopup(popup_11558040afd47d8c0ab98c1fe047d394)
+        ;
+
+        
+    
+    
+            marker_60c75af11917b0f0656b8f83ec96849e.bindTooltip(
+                `<div>
+                     RISE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba33c96dce13a9bf3228183573c6826d = L.marker(
+                [39.84754, -74.98935],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_0ef29dc4819c4d12313448ac3d9b81fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus-square", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ba33c96dce13a9bf3228183573c6826d.setIcon(icon_0ef29dc4819c4d12313448ac3d9b81fc);
+        
+    
+        var popup_3d519b9d1c001cd76c3fdd5804c0e603 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa2afc34f6bcf462d5af8bec9bb2e77f = $(`<div id="html_aa2afc34f6bcf462d5af8bec9bb2e77f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Sweet Spot<br><b>Address:</b>903 White Horse Road, Suite 2<br><b>Type:</b> Medicinal cannabis only</div>`)[0];
+            popup_3d519b9d1c001cd76c3fdd5804c0e603.setContent(html_aa2afc34f6bcf462d5af8bec9bb2e77f);
+        
+
+        marker_ba33c96dce13a9bf3228183573c6826d.bindPopup(popup_3d519b9d1c001cd76c3fdd5804c0e603)
+        ;
+
+        
+    
+    
+            marker_ba33c96dce13a9bf3228183573c6826d.bindTooltip(
+                `<div>
+                     Sweet Spot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f76acfd36d31a9fa5453d7679bef8be0 = L.marker(
+                [40.226356, -74.040076],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_d027f7462f4ee45fcd9df76c704a773a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f76acfd36d31a9fa5453d7679bef8be0.setIcon(icon_d027f7462f4ee45fcd9df76c704a773a);
+        
+    
+        var popup_29807fd2d2416918afe32e68694d5cf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_916116b5f0cd0ee394b7b16eb6604d66 = $(`<div id="html_916116b5f0cd0ee394b7b16eb6604d66" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Zen Leaf<br><b>Address:</b>2100 Route 66<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_29807fd2d2416918afe32e68694d5cf2.setContent(html_916116b5f0cd0ee394b7b16eb6604d66);
+        
+
+        marker_f76acfd36d31a9fa5453d7679bef8be0.bindPopup(popup_29807fd2d2416918afe32e68694d5cf2)
+        ;
+
+        
+    
+    
+            marker_f76acfd36d31a9fa5453d7679bef8be0.bindTooltip(
+                `<div>
+                     Zen Leaf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b9528e1c9afba4b29ecfe9040baacf0 = L.marker(
+                [40.6636, -74.206087],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_639973c880ac8f01f0fb25774c0a2410 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0b9528e1c9afba4b29ecfe9040baacf0.setIcon(icon_639973c880ac8f01f0fb25774c0a2410);
+        
+    
+        var popup_5e80f9d28e8d9bc868d2980d163a0613 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71f878a7da00ace7c1a42c2cfe656107 = $(`<div id="html_71f878a7da00ace7c1a42c2cfe656107" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Zen Leaf<br><b>Address:</b>117 Spring Street<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_5e80f9d28e8d9bc868d2980d163a0613.setContent(html_71f878a7da00ace7c1a42c2cfe656107);
+        
+
+        marker_0b9528e1c9afba4b29ecfe9040baacf0.bindPopup(popup_5e80f9d28e8d9bc868d2980d163a0613)
+        ;
+
+        
+    
+    
+            marker_0b9528e1c9afba4b29ecfe9040baacf0.bindTooltip(
+                `<div>
+                     Zen Leaf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c50e65c72e180b3d174f0f03a9a22d65 = L.marker(
+                [40.290606, -74.687318],
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var icon_4eec2292e87212d7145f7daf46dd12fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c50e65c72e180b3d174f0f03a9a22d65.setIcon(icon_4eec2292e87212d7145f7daf46dd12fd);
+        
+    
+        var popup_f1e6960862f56dd45bbcdbe514a518d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c818ee153c0872682cbc3d276594439 = $(`<div id="html_0c818ee153c0872682cbc3d276594439" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Zen Leaf<br><b>Address:</b>3256 Brunswick Pike<br><b>Type:</b> Medicinal and Recreational</div>`)[0];
+            popup_f1e6960862f56dd45bbcdbe514a518d9.setContent(html_0c818ee153c0872682cbc3d276594439);
+        
+
+        marker_c50e65c72e180b3d174f0f03a9a22d65.bindPopup(popup_f1e6960862f56dd45bbcdbe514a518d9)
+        ;
+
+        
+    
+    
+            marker_c50e65c72e180b3d174f0f03a9a22d65.bindTooltip(
+                `<div>
+                     Zen Leaf
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_bd346c2d436f806ad0b78c939578ad0f = L.featureGroup(
+                {}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+        function geo_json_cae510ec1faa540ea09df122ce21c37b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "lightgray", "fillColor": "white", "weight": 2};
+            }
+        }
+
+        function geo_json_cae510ec1faa540ea09df122ce21c37b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_cae510ec1faa540ea09df122ce21c37b = L.geoJson(null, {
+                onEachFeature: geo_json_cae510ec1faa540ea09df122ce21c37b_onEachFeature,
+            
+                style: geo_json_cae510ec1faa540ea09df122ce21c37b_styler,
+        });
+
+        function geo_json_cae510ec1faa540ea09df122ce21c37b_add (data) {
+            geo_json_cae510ec1faa540ea09df122ce21c37b
+                .addData(data)
+                .addTo(feature_group_bd346c2d436f806ad0b78c939578ad0f);
+        }
+            geo_json_cae510ec1faa540ea09df122ce21c37b_add({"bbox": [-75.29712092625658, 39.284890812590184, -73.87698933033205, 41.00886510004615], "features": [{"bbox": [-75.29712092625658, 39.284890812590184, -73.87698933033205, 41.00886510004615], "geometry": {"coordinates": [[[[-74.33745102834676, 39.32954936992477], [-74.34138166862886, 39.32312430813873], [-74.34610343994356, 39.31702922827081], [-74.35157074266198, 39.31132273697664], [-74.35773084659489, 39.30605969099067], [-74.3645244017171, 39.30129067265611], [-74.37188601064645, 39.29706150675772], [-74.37974485733358, 39.29341282315976], [-74.388025385954, 39.2903796693106], [-74.39664802358564, 39.28799117620239], [-74.405529939903, 39.286270280870845], [-74.41458583682544, 39.28523350799269], [-74.42372876082136, 39.284890812590184], [-74.43287093039395, 39.285245485288094], [-74.44192457115558, 39.286294120992935], [-74.45080275083961, 39.28802665128246], [-74.45942020659895, 39.29042644020851], [-74.4676941569996, 39.293470442634145], [-74.4693188414756, 39.29422771269628], [-74.47160060561755, 39.295066980001955], [-74.47945192160131, 39.29872569671197], [-74.48680476130532, 39.30296426231592], [-74.49358839164752, 39.30774195668276], [-74.49973750927649, 39.31301287156519], [-74.50519286841487, 39.3187263487619], [-74.50990185239397, 39.324827464018185], [-74.51381898334252, 39.331257552155435], [-74.51690636501209, 39.33795476851868], [-74.51913405429359, 39.34485468147045], [-74.52047682581875, 39.35187243401208], [-74.52783936717564, 39.349825408987975], [-74.53672588854202, 39.34809452181756], [-74.54578781782395, 39.34704755254118], [-74.55493814379615, 39.34669455358377], [-74.56408901437382, 39.347038914019954], [-74.5731525723402, 39.348077327334984], [-74.58204179111931, 39.349799822892926], [-74.5906713029369, 39.352189860823046], [-74.59895821177169, 39.35522448945327], [-74.60682288361706, 39.35887456384453], [-74.61418970674941, 39.36310502341545], [-74.62098781493648, 39.367875226099216], [-74.62715176681114, 39.37313933594659], [-74.63262217499005, 39.378846760586384], [-74.63734627892357, 39.38494263448068], [-74.64127845592986, 39.39136834347275], [-74.64438066538385, 39.39806208572235], [-74.6466228216037, 39.40495946376273], [-74.64798309159777, 39.411994102098255], [-74.64844811450149, 39.41909828449537], [-74.64801314024216, 39.42620360490555], [-74.64668208571422, 39.433241625800555], [-74.64446750752452, 39.44014453759928], [-74.64139049116692, 39.44684581282502], [-74.63748045730276, 39.45328084865235], [-74.63277488665081, 39.45938759158603], [-74.62731896581478, 39.46510713816043], [-74.62116515719347, 39.470384305756184], [-74.61437269691504, 39.47516816790041], [-74.60700702550307, 39.47941254874624], [-74.59913915670931, 39.48307647181333], [-74.59084499062465, 39.486124558510724], [-74.58220457779579, 39.488527372451976], [-74.57330134162427, 39.49026170610637], [-74.56422126679341, 39.49131080690166], [-74.55505206185605, 39.49166454049899], [-74.54588230441007, 39.49131948959165], [-74.53680057748903, 39.4902789872291], [-74.52789460589598, 39.488553084328984], [-74.51925040120929, 39.486158451705556], [-74.51095142408994, 39.4831182176038], [-74.503077772321, 39.47946174237937], [-74.49570540271662, 39.47522433259532], [-74.48890539465266, 39.47044689741206], [-74.48274326250232, 39.46517555072002], [-74.477278323713, 39.45946116299802], [-74.47256312864437, 39.45335886737046], [-74.46864295761277, 39.44692752477649], [-74.46555538985939, 39.440229153551044], [-74.46332994839467, 39.43332832904837], [-74.46199134398876, 39.42631001707555], [-74.45461883808608, 39.42835284431753], [-74.4457201060286, 39.43007743067771], [-74.43664594196663, 39.43111658458843], [-74.42748399713501, 39.431460268281], [-74.41832277852684, 39.431105161996065], [-74.40925078599064, 39.430054696338736], [-74.4003556494019, 39.42831901882353], [-74.39172327462911, 39.42591489494748], [-74.38343700691158, 39.42286554479145], [-74.3818102728888, 39.4221070898866], [-74.37952545385139, 39.42126607642044], [-74.37166565198542, 39.41760068374649], [-74.36430777741296, 39.41335492009883], [-74.35752276834071, 39.408569775088765], [-74.35137599323012, 39.403291436699064], [-74.34592662033567, 39.39757084243512], [-74.34122704902981, 39.39146318474847], [-74.33732240834267, 39.385027375651774], [-74.33425012741864, 39.37832547583008], [-74.33203958182638, 39.371422093882], [-74.33071181886305, 39.36438376159447], [-74.33027936417801, 39.35727829136269], [-74.33074611121681, 39.35017412201292], [-74.33210729416082, 39.343139659368575], [-74.33434954422123, 39.33624261792091], [-74.33745102834676, 39.32954936992477]]], [[[-74.95913035145657, 39.468735575806164], [-74.96380791175044, 39.46261578389211], [-74.96923596220968, 39.45688059554442], [-74.97536214386591, 39.45158514440211], [-74.98212742671232, 39.446780324715185], [-74.98946667935563, 39.44251230518067], [-74.99730929538438, 39.43882208830237], [-75.00557987045809, 39.4357451193661], [-75.0141989237097, 39.43331094865059], [-75.02308365669786, 39.43154294999192], [-75.03214874284829, 39.43045809829302], [-75.04130714008423, 39.430066808022744], [-75.05047091916644, 39.43037283418488], [-75.0595521001417, 39.4313732366637], [-75.06846348923735, 39.433058408269936], [-75.07711950853616, 39.4354121662271], [-75.08543701082316, 39.43841190625627], [-75.09333607211038, 39.442028817841525], [-75.1007407545207, 39.44622815869443], [-75.10757983244476, 39.45096958588719], [-75.1137874751762, 39.45620754059627], [-75.11930387957983, 39.46189168289411], [-75.12407584675353, 39.46796737255234], [-75.12805729710655, 39.4743761913785], [-75.13120971879339, 39.48105650220381], [-75.13350254501061, 39.487944039277565], [-75.1349134562823, 39.494972524505755], [-75.13542860452344, 39.50207430370332], [-75.1350427563769, 39.50918099681242], [-75.13375935406307, 39.51622415587805], [-75.13159049275518, 39.52313592446784], [-75.1285568142933, 39.52984969217904], [-75.12468731786659, 39.5363007378928], [-75.1200190891193, 39.54242685551419], [-75.11459694996286, 39.548168956080026], [-75.10847303219336, 39.55347164031949], [-75.1017062788127, 39.55828373601909], [-75.0943618777208, 39.56255879486844], [-75.08651063317674, 39.56625554384606], [-75.07822828110697, 39.56933828664001], [-75.0695947549607, 39.57177725108399], [-75.06069340936536, 39.573548879120175], [-75.05161020931114, 39.574636056369386], [-75.04243289298617, 39.575028278992356], [-75.03325011668473, 39.57472175615513], [-75.0241505904176, 39.5737194470606], [-75.01522221296119, 39.57203103216901], [-75.00655121508888, 39.56967281889571], [-74.99822131963502, 39.566667582736315], [-74.99031292684923, 39.56304434542146], [-74.9829023332101, 39.55883809233507], [-74.97606099148803, 39.55408943203907], [-74.96985481938079, 39.54884420132146], [-74.9643435635032, 39.54315301972249], [-74.959580224898, 39.537070797986104], [-74.95561055156189, 39.530656205327716], [-74.952472602755, 39.523971100799756], [-74.95019638909693, 39.51707993437076], [-74.94880359165504, 39.51004912360758], [-74.94830736241421, 39.502946412063395], [-74.94871220769005, 39.49584021562526], [-74.95001395521825, 39.488798963161635], [-74.95219980483374, 39.48189043783602], [-74.95524846184827, 39.47518112541553], [-74.95913035145657, 39.468735575806164]]], [[[-74.93943663723711, 39.68526641957148], [-74.94413033222243, 39.679147556226525], [-74.94957675252786, 39.67341339464223], [-74.95572336157262, 39.66811905776034], [-74.96251093249899, 39.6633154282806], [-74.96987411972437, 39.65904866263932], [-74.97774208735427, 39.6553597505178], [-74.98603918844219, 39.65228412396963], [-74.99468568866905, 39.649851319784446], [-75.00359852765949, 39.64808469820361], [-75.01269211085412, 39.647001220577366], [-75.021879124618, 39.64661128800536], [-75.03107136708572, 39.646918642439665], [-75.04018058712224, 39.64792033115508], [-75.04911932371684, 39.64960673490949], [-75.05780173812512, 39.651961659533654], [-75.0661444311304, 39.65496249010751], [-75.07406723791121, 39.6585804063054], [-75.08149399317695, 39.662780656928575], [-75.08835325946592, 39.66752289109499], [-75.09457901179289, 39.672761543028535], [-75.10011127218218, 39.678446266886425], [-75.10489668802951, 39.684522417588774], [-75.10888904869825, 39.69093157317319], [-75.11204973527322, 39.69761209379318], [-75.11434809896483, 39.70449971211653], [-75.11576176427525, 39.71152814956218], [-75.11627685370425, 39.718629752545674], [-75.11588813148055, 39.725736142686166], [-75.1145990645489, 39.732778874766375], [-75.11242179982113, 39.73969009613293], [-75.10937705750035, 39.74640320117957], [-75.10549394110764, 39.75285347457314], [-75.1008096656693, 39.75897871696108], [-75.09939208743207, 39.760474754685774], [-75.10115666214459, 39.760398699107085], [-75.11036429474112, 39.76069965561538], [-75.11948957691274, 39.76169498149635], [-75.12844489470366, 39.7633751184603], [-75.13714425146736, 39.76572393247639], [-75.14550408658066, 39.768718867377956], [-75.15344407179846, 39.7723311596456], [-75.16088787789961, 39.77652611239164], [-75.16776390450597, 39.78126342602113], [-75.17400596624942, 39.78649758251713], [-75.1795539288099, 39.792178279793966], [-75.18435428875489, 39.79825091208771], [-75.18836069157294, 39.8046570919115], [-75.19153438281097, 39.81133520869938], [-75.19384458779489, 39.818221018898775], [-75.19526881603234, 39.82524826195424], [-75.19579308706246, 39.83234929635573], [-75.19541207522559, 39.83945574970735], [-75.19412917157231, 39.84649917660999], [-75.19394068526245, 39.84709890702975], [-75.1951766934167, 39.85078071233859], [-75.19660177832701, 39.8578078927728], [-75.1971264832206, 39.864908878133896], [-75.19674547781098, 39.872015296519905], [-75.19546215263308, 39.879058702866075], [-75.19328859711045, 39.885971238327144], [-75.19024549351731, 39.89268628480865], [-75.1863619274555, 39.89913910830652], [-75.18167511629676, 39.90526748479321], [-75.17623005787226, 39.91101230252905], [-75.17007910251392, 39.91631813488161], [-75.16328145235636, 39.921133777999856], [-75.15590259258286, 39.925412748015695], [-75.14801366003482, 39.92911373282578], [-75.13969075528966, 39.93220099394318], [-75.13101420493966, 39.934644714393], [-75.12206778136111, 39.93642128915683], [-75.11293788774464, 39.93751355523987], [-75.1037127165528, 39.93791095903814], [-75.09448138987598, 39.93760965931243], [-75.08533309036619, 39.93661256472483], [-75.0763561915382, 39.93492930555525], [-75.06763739623442, 39.932576139880815], [-75.05926089195785, 39.92957579516415], [-75.05130753158322, 39.92595724684813], [-75.04385404766685, 39.9217554361883], [-75.03697230819368, 39.91701093016269], [-75.03136205153659, 39.91230132652547], [-75.02584405394033, 39.914341903220475], [-75.0171656077123, 39.916777123566185], [-75.00821846516877, 39.918544923092796], [-74.99908903680466, 39.919628223931674], [-74.98986551074108, 39.9200165594748], [-74.98063699311768, 39.9197061764855], [-74.97149263918428, 39.9187000717617], [-74.96252078387916, 39.917007962978154], [-74.95380808068823, 39.914646194000184], [-74.94543865748346, 39.911637575624134], [-74.93749329784555, 39.908011163351034], [-74.93004865608378, 39.90380197443358], [-74.92317651378282, 39.899050647043836], [-74.91694308523722, 39.89380304498466], [-74.91140837858659, 39.88810981190445], [-74.90662561884614, 39.882025879467385], [-74.90264073834888, 39.87560993437505], [-74.89949193938486, 39.868923849524705], [-74.89720933305233, 39.86203208492369], [-74.89581465753368, 39.85500106425203], [-74.89532107818691, 39.84789853317842], [-74.89573307101153, 39.8407929056839], [-74.89704639021437, 39.833752604734556], [-74.89924811977676, 39.82684540366843], [-74.90231680811702, 39.82013777462438], [-74.90622268415864, 39.81369425024244], [-74.91092795236283, 39.807576804709946], [-74.91638716356891, 39.80184426001543], [-74.92254765781352, 39.79655172300902], [-74.92935007467237, 39.79175005855442], [-74.9367289260923, 39.78748540369861], [-74.94461322615683, 39.783798727384635], [-74.95292717175862, 39.78072543979433], [-74.96159086773964, 39.77829505493568], [-74.9666597319229, 39.77729380744068], [-74.9632600478448, 39.775369324688505], [-74.9563985082982, 39.770619800362816], [-74.95017425772376, 39.76537381677863], [-74.94464721638047, 39.75968200152972], [-74.93987053630312, 39.75359927221337], [-74.93589009241452, 39.74718430360319], [-74.93274404567346, 39.74049895893551], [-74.93046248226977, 39.733607690926526], [-74.92906713207849, 39.72657691841139], [-74.92857116876428, 39.719474384709066], [-74.92897909309778, 39.71236850396707], [-74.93028670021309, 39.70532770182699], [-74.93248113071401, 39.698419756776524], [-74.9355410047295, 39.69171114851614], [-74.93943663723711, 39.68526641957148]]], [[[-74.82927033764753, 40.0068552073775], [-74.83399558212211, 40.00074100232761], [-74.83947646344106, 39.99501217583193], [-74.84566011292411, 39.989723798099355], [-74.8524869476773, 39.98492669316187], [-74.8598912455469, 39.9806669534671], [-74.86780177709846, 39.97698550004702], [-74.87614248857521, 39.97391769234398], [-74.88483322937624, 39.97149299130347], [-74.89379051723989, 39.96973467884099], [-74.9029283340192, 39.96865963626442], [-74.9121589446988, 39.96827818368603], [-74.921393732122, 39.96859398189607], [-74.93054403977652, 39.96960399759531], [-74.93952201492625, 39.97129853230292], [-74.94824144437418, 39.973661314672825], [-74.95661857519842, 39.976669655370216], [-74.96457291292025, 39.98029466308521], [-74.97202798973751, 39.98450151969769], [-74.97891209569175, 39.98924981205896], [-74.9851589659295, 39.99449391732896], [-74.99070841756956, 40.00018343830406], [-74.99550693009574, 40.006263684696975], [-74.99950816365944, 40.012676195888446], [-75.00267341019523, 40.01935930026775], [-75.00497197282455, 40.02624870591555], [-75.0063814696446, 40.03327811706597], [-75.00688805866788, 40.04037987051627], [-75.0064865813892, 40.04748558593541], [-75.00518062320543, 40.05452682386187], [-75.00298248969474, 40.06143574507673], [-74.99991309856756, 40.06814576499416], [-74.99600178792532, 40.07459219672826], [-74.99128604229747, 40.08071287657508], [-74.98581113876027, 40.08644876579054], [-74.97962971626676, 40.091744522750304], [-74.97280127212363, 40.09654903984315], [-74.96539159032724, 40.1008159397762], [-74.95747210720876, 40.10450402635274], [-74.94911922052553, 40.107577685220704], [-74.94041354876359, 40.11000723057607], [-74.931439147974, 40.11176919433755], [-74.92228269394677, 40.11284655487858], [-74.91303263792062, 40.11322890300792], [-74.90377834433134, 40.112912543519464], [-74.89460921930758, 40.11190053128231], [-74.88561383873095, 40.110202641503946], [-74.87687908468241, 40.107835274465145], [-74.86848929900084, 40.10482129568853], [-74.86052546248312, 40.10118981315369], [-74.8530644079619, 40.096975893805755], [-74.84617807511103, 40.092220222211274], [-74.83993281435707, 40.08696870479044], [-74.83438874672434, 40.08127202359141], [-74.82959918582004, 40.07518514406409], [-74.82561012748384, 40.06876678173406], [-74.82245981189283, 40.06207883306655], [-74.82017836213862, 40.05518577614267], [-74.81878750248873, 40.048154047043454], [-74.81830035871907, 40.04105139804823], [-74.81872134206996, 40.033946243902996], [-74.82004611754245, 40.02690700250008], [-74.82226165642504, 40.02000143633394], [-74.82534637213185, 40.01329600105903], [-74.82927033764753, 40.0068552073775]]], [[[-74.61729000539503, 40.11468343917233], [-74.62204164520483, 40.10857794410602], [-74.62754891917173, 40.10285919958933], [-74.63375870618088, 40.09758217797647], [-74.64061117374153, 40.092797593396256], [-74.64804035526303, 40.08855141742353], [-74.65597478429524, 40.08488444042305], [-74.66433817966883, 40.08183188263544], [-74.67305017505933, 40.079423058602124], [-74.6820270861433, 40.07768109802446], [-74.69118270821959, 40.07662272562547], [-74.70042913693011, 40.076258102035716], [-74.70967760453638, 40.076590727162106], [-74.71883932408865, 40.07761740692432], [-74.7278263337637, 40.07932828366249], [-74.73655233364715, 40.081706929936615], [-74.74493350729337, 40.08473050485697], [-74.75288932051443, 40.08836997151058], [-74.76034329002533, 40.092590373485635], [-74.76722371480848, 40.09735116794844], [-74.77346436335446, 40.10260661220014], [-74.77900511028854, 40.10830620013789], [-74.78379251630142, 40.11439514457178], [-74.78778034577026, 40.120814900907924], [-74.79093001697503, 40.12750372730524], [-74.79321098039071, 40.13439727605209], [-74.79460102115873, 40.14142921059181], [-74.79508648251182, 40.148531842359134], [-74.79466240764033, 40.15563678137375], [-74.7933325982384, 40.162675594376545], [-74.79110958875174, 40.169580464192045], [-74.7880145361572, 40.176284843956815], [-74.78752518465284, 40.177085184513615], [-74.78869937771037, 40.17721580234251], [-74.79770124790987, 40.178921176531205], [-74.8064424180308, 40.18129446232934], [-74.81483892710237, 40.18431287039173], [-74.82281009473384, 40.187947413594344], [-74.83027929111091, 40.19216318307812], [-74.83717466972006, 40.19691968086276], [-74.84342985594643, 40.20217120596234], [-74.84898458504351, 40.2078672904321], [-74.85378528338181, 40.213953181302045], [-74.85778558735001, 40.22037036391208], [-74.86094679480284, 40.227057121760474], [-74.86323824452371, 40.233949127615126], [-74.86463761979397, 40.24098006032054], [-74.86513117283205, 40.2480822414651], [-74.86471386757877, 40.255187285857225], [-74.86338943905727, 40.26222675959839], [-74.86117036831958, 40.269132839437034], [-74.85807777280064, 40.27583896704442], [-74.85414121272807, 40.28228049187124], [-74.84939841507243, 40.28839529632372], [-74.84389491735975, 40.294124397141736], [-74.83768363449715, 40.299412517066656], [-74.83082435257035, 40.30420862115386], [-74.82338315435263, 40.30846641241229], [-74.81543178200388, 40.31214478183676], [-74.80704694312793, 40.315208208337324], [-74.79830956698545, 40.31762710455702], [-74.78930401821945, 40.31937810510209], [-74.78011727593105, 40.32044429428034], [-74.77330425854063, 40.32071682130004], [-74.77092110890904, 40.32460433996427], [-74.76616784746119, 40.33071572316466], [-74.76065387713288, 40.33644085705161], [-74.75443221437607, 40.3417245022684], [-74.74756274608202, 40.346515666750214], [-74.74011165408703, 40.35076810095904], [-74.73215077688029, 40.3544407474635], [-74.72375691469318, 40.357498140372385], [-74.71501108477804, 40.35991075061754], [-74.70599773424385, 40.36165527361579], [-74.6968039182973, 40.36271485641113], [-74.687518452132, 40.363079262003566], [-74.67823104501132, 40.36274496920285], [-74.66903142529615, 40.36171520699563], [-74.66000846527284, 40.359999923077396], [-74.65124931463971, 40.357615686866396], [-74.64283855141085, 40.354585527980795], [-74.63485735879465, 40.35093871181027], [-74.62738273630787, 40.34671045444739], [-74.6204867529943, 40.34194157985017], [-74.61423585014106, 40.33667812268162], [-74.60869020032963, 40.33097088080695], [-74.60390312903229, 40.32487492192014], [-74.59992060427818, 40.318449049212724], [-74.59678079917433, 40.311755231384815], [-74.59451373128886, 40.304858002629715], [-74.59314098209434, 40.29782383849358], [-74.59267549884053, 40.29072051372142], [-74.59312148038758, 40.28361644834714], [-74.59447434769233, 40.276580048369546], [-74.59672079881132, 40.26967904737679], [-74.59983894747279, 40.26297985544209], [-74.60379854348305, 40.25654692151242], [-74.60856127247852, 40.25044211535416], [-74.61408113181756, 40.244724134906], [-74.62030487873224, 40.23944794462286], [-74.62717254623287, 40.23466425008096], [-74.63461802168118, 40.23041901375246], [-74.64256968242411, 40.22675301645734], [-74.65095108241064, 40.22370146856016], [-74.65968168330274, 40.22129367450703], [-74.6686776232352, 40.21955275379599], [-74.6762674283173, 40.218678143914204], [-74.67340254209718, 40.21813262319385], [-74.6646612351844, 40.21574930704188], [-74.65626746115315, 40.21272001670691], [-74.64830223841612, 40.2090740087436], [-74.64084241185775, 40.204846490943936], [-74.63395990757417, 40.200078279599616], [-74.62772103698343, 40.19481540243644], [-74.62218585712917, 40.1891086511996], [-74.61740759337627, 40.18301308835969], [-74.61343213001257, 40.17658751285101], [-74.61029757353448, 40.16989389014061], [-74.60803389261754, 40.16299675225825], [-74.60666263796658, 40.15596257368777], [-74.60619674441344, 40.148859129230374], [-74.60664041679352, 40.141754840097306], [-74.60798910029682, 40.134718114573324], [-74.61022953516105, 40.12781668961417], [-74.61333989476498, 40.12111697970061], [-74.61729000539503, 40.11468343917233]]], [[[-74.40327361914127, 40.300081426823226], [-74.40805742968645, 40.29398493653919], [-74.41359770696852, 40.28827657792626], [-74.41984101349975, 40.28301122227438], [-74.42672719603851, 40.278239470534764], [-74.43418996587503, 40.27400717011287], [-74.44215753607499, 40.27035497743023], [-74.45055330959187, 40.267317970312156], [-74.45929661174704, 40.264925313785454], [-74.46830346022321, 40.2631999823679], [-74.4774873654216, 40.262158541404396], [-74.48676015379598, 40.26181098945845], [-74.49603280659994, 40.26216066320356], [-74.5052163063644, 40.26320420568685], [-74.51422248336407, 40.264931598254876], [-74.52296485433087, 40.267326255849895], [-74.53135944573243, 40.27036518480307], [-74.53932559405149, 40.27401920167815], [-74.54678671568031, 40.278253211155395], [-74.55367103928121, 40.283026540399646], [-74.55991229375911, 40.288293326828814], [-74.56545034534656, 40.294002955697685], [-74.570231777713, 40.30010054343828], [-74.57421040947786, 40.30652746225865], [-74.57734774403019, 40.31322190109916], [-74.57961334713417, 40.32011945768461], [-74.58098514842503, 40.327153756094745], [-74.58144966357443, 40.33425708400901], [-74.58100213461998, 40.341361043566586], [-74.5796465867073, 40.34839720962365], [-74.57739580027983, 40.35529778908812], [-74.57427119856222, 40.361996274970224], [-74.57030265101247, 40.36842808880752], [-74.5655281942566, 40.37453120520496], [-74.55999367285827, 40.38024675237618], [-74.5537523031052, 40.38551958277987], [-74.54686416380427, 40.390298808214574], [-74.53939561885711, 40.39453829406461], [-74.53141867712765, 40.39819710777564], [-74.52301029580194, 40.401239917078584], [-74.51425163406863, 40.40363733397042], [-74.50522726450599, 40.40536620099369], [-74.49602435004145, 40.4064098169308], [-74.4867317947413, 40.406758099634395], [-74.47743937698927, 40.40640768434803], [-74.46823687381573, 40.40536195652194], [-74.45921318524101, 40.403631018791906], [-74.45045546749618, 40.4012315924556], [-74.44204828388281, 40.398186854443416], [-74.43407278182873, 40.394526211432044], [-74.42660590439735, 40.3902850133812], [-74.41971964411401, 40.3855042093798], [-74.41348034649397, 40.38022994926093], [-74.40794807009827, 40.374513134979246], [-74.40317600931547, 40.36840892623319], [-74.39920998537839, 40.361976205254955], [-74.3960880103851, 40.35527700607632], [-74.3938399283133, 40.34837591390806], [-74.39248713620741, 40.34133944053959], [-74.39204238788804, 40.33423538187302], [-74.39250968169489, 40.3271321638513], [-74.39388423293555, 40.32009818312172], [-74.39615253088394, 40.31320114879634], [-74.39929247936061, 40.30650743162852], [-74.40327361914127, 40.300081426823226]]], [[[-74.36183736311551, 40.63323666021573], [-74.36874484750547, 40.63802073916683], [-74.37500452361324, 40.64329720762942], [-74.38055607773268, 40.64901535886672], [-74.38534596006222, 40.65512022822622], [-74.389327903634, 40.661553118481166], [-74.39246337511813, 40.66825216142887], [-74.39472195296607, 40.67515291047875], [-74.39608162898547, 40.68218895864852], [-74.39652903011702, 40.689292576119826], [-74.39605955790384, 40.69639536129133], [-74.39467744390186, 40.70342889910834], [-74.39239572007142, 40.71032542034696], [-74.38923610400578, 40.7170184554902], [-74.38522879968701, 40.72344347685375], [-74.38041221530365, 40.72953852270317], [-74.37483260050806, 40.73524479724947], [-74.36854360632702, 40.74050724062016], [-74.36160577175315, 40.74527506317282], [-74.35780804538433, 40.74741003489448], [-74.35722321917073, 40.74864675340395], [-74.35321093112718, 40.75507061975292], [-74.34838913727478, 40.76116428703906], [-74.34280413753415, 40.76686897255218], [-74.3365096350011, 40.772129631550776], [-74.32956622202889, 40.776895491436505], [-74.32204079778778, 40.78112054494906], [-74.31400592286455, 40.784763997468026], [-74.30553911715727, 40.78779066394946], [-74.30547696272744, 40.7878074489931], [-74.30735069058792, 40.7918154123841], [-74.30960460402316, 40.79871766892861], [-74.31095777856548, 40.8057545551988], [-74.31139690176155, 40.81285833296004], [-74.31091745298214, 40.81996059861101], [-74.30952375815589, 40.82699294155003], [-74.307228959318, 40.83388760343743], [-74.304054898835, 40.84057813199064], [-74.30003191900354, 40.84700002296993], [-74.295198578567, 40.853091344096434], [-74.28960128853917, 40.858793334790775], [-74.28329387056166, 40.86405097583058], [-74.27633704183744, 40.86881352329583], [-74.2687978314704, 40.8730350015026], [-74.26074893378548, 40.87667465001331], [-74.25226800489808, 40.87969732025372], [-74.24343690943398, 40.88207381775874], [-74.23434092486146, 40.883781186604146], [-74.2250679113797, 40.88480293315761], [-74.2157074557001, 40.885129186889], [-74.20900052442062, 40.884862354706435], [-74.20970515381535, 40.88535028468479], [-74.21597534901498, 40.890635185230984], [-74.22153374209425, 40.896360761605045], [-74.22632671462246, 40.90247197828617], [-74.23030796658347, 40.90891007731679], [-74.23343896762384, 40.915613140470306], [-74.23568933530808, 40.9225166823154], [-74.23703713646785, 40.92955426859064], [-74.2374691084113, 40.93665815403747], [-74.23698079748306, 40.94375993362574], [-74.2355766132262, 40.95079120094882], [-74.23326979719238, 40.95768420746398], [-74.23008230626641, 40.96437251621487], [-74.22604461120937, 40.970791643693225], [-74.22119541197223, 40.97687968358207], [-74.21558127217972, 40.98257790626943], [-74.20925617602292, 40.98783132823201], [-74.20228101161723, 40.992589245659566], [-74.19472298567065, 40.99680572702245], [-74.1866549750544, 41.00044005967351], [-74.17815482156264, 41.00345714601779], [-74.16930457678214, 41.00582784527563], [-74.16018970455367, 41.00752925740107], [-74.15089824898999, 41.0085449462932], [-74.141519976408, 41.00886510004615], [-74.13214549983412, 41.00848662661745], [-74.1228653949415, 41.00741318394732], [-74.11376931637827, 41.00565514422554], [-74.10494512343952, 41.003229492669604], [-74.09647802392789, 41.00015966184133], [-74.08844974483674, 40.99647530318014], [-74.08841916388555, 40.996457949612825], [-74.08378503625893, 40.996613760341795], [-74.07441266458194, 40.996230600720445], [-74.06513525351569, 40.995152520944494], [-74.05604243139398, 40.99338993817482], [-74.04722202567584, 40.990959881658924], [-74.03875920713118, 40.98788582661277], [-74.03073566090215, 40.98419746533429], [-74.0232287927609, 40.97993041786273], [-74.01631097848035, 40.975125885102806], [-74.01004886374567, 40.96983024790389], [-74.00450272146428, 40.96409461611659], [-73.99972587269319, 40.957974332135144], [-73.99576417670221, 40.9515284338715], [-73.99265559494123, 40.94481908248907], [-73.9923559734248, 40.943889229348926], [-73.99224595063244, 40.94377536706696], [-73.98747168389048, 40.937654569038145], [-73.98367123319314, 40.931466908234995], [-73.98122407868793, 40.93173099215591], [-73.97185600015031, 40.93203740657241], [-73.96249349906645, 40.93164520260529], [-73.95322703442888, 40.93055817139795], [-73.94414612785206, 40.9287868168766], [-73.93533849059034, 40.92634825322607], [-73.92688916889874, 40.92326603793594], [-73.91887971635354, 40.919569942108474], [-73.91138740143822, 40.9152956603507], [-73.90448445829662, 40.91048446317742], [-73.89823738806531, 40.905182795422405], [-73.89270631762683, 40.899441824686484], [-73.88794442198709, 40.893316944336554], [-73.88399741577965, 40.88686723600579], [-73.88090311864985, 40.88015489692759], [-73.87869109848155, 40.87324463775883], [-73.8773823956107, 40.86620305681441], [-73.87698933033205, 40.85909799683618], [-73.87751539515946, 40.85199789056081], [-73.87895523245572, 40.844971101427994], [-73.88129469721402, 40.838085265785324], [-73.88451100395733, 40.83140664290056], [-73.88857295593367, 40.8249994789852], [-73.89344125402884, 40.818925391270724], [-73.89906888210125, 40.813242777960156], [-73.9054015647697, 40.808006259607964], [-73.91237829305925, 40.8032661571627], [-73.91993191273494, 40.799068011543675], [-73.92798976963208, 40.79545214921851], [-73.93647440582505, 40.79245329780738], [-73.94530430006797, 40.79010025526536], [-73.9543946455883, 40.7884156156918], [-73.96365815802207, 40.787415554288444], [-73.973005906045, 40.787109673441144], [-73.98234815707842, 40.78750091133769], [-73.99159523033353, 40.78858551396058], [-73.99292464158924, 40.78884483596837], [-73.99163717730755, 40.78197396086677], [-73.99123231800525, 40.77486911533902], [-73.9917454495202, 40.76776830641024], [-73.99317133985122, 40.76073990499584], [-73.9954959790926, 40.753851563713894], [-73.99869672500272, 40.74716956671214], [-74.00274253080278, 40.740758193423126], [-74.00759425264128, 40.734679102292766], [-74.01320503344293, 40.72899074030902], [-74.01952075918682, 40.72374778388912], [-74.02648058303265, 40.71900061636511], [-74.03401751213795, 40.71479484694519], [-74.04205905148805, 40.7111708756243], [-74.05052789859312, 40.70816350807612], [-74.05934268249717, 40.705801624085474], [-74.06841874019199, 40.70410790257674], [-74.07766892323478, 40.70309860576743], [-74.08700442713436, 40.702783424429185], [-74.09633563589423, 40.703165385675554], [-74.10557297398496, 40.7042408241231], [-74.11462775796112, 40.70599941669134], [-74.12341303993976, 40.70842428072576], [-74.1318444352193, 40.711492134546965], [-74.13686898511222, 40.71380542356137], [-74.13729220602848, 40.713614207657955], [-74.13226994835742, 40.70936229408007], [-74.12673471652927, 40.70363232972213], [-74.1219650552749, 40.69751686475136], [-74.11800675770269, 40.691074890128974], [-74.11489775605803, 40.6843685289203], [-74.11266776371693, 40.6774624348203], [-74.11133799784908, 40.6704231669129], [-74.11092098507727, 40.663318546783636], [-74.11142045161738, 40.656217004247985], [-74.1128312985399, 40.64918691803702], [-74.11513966196263, 40.642295957798844], [-74.11832305716946, 40.63561043373059], [-74.12235060486246, 40.62919466005105], [-74.12718333699937, 40.6231103383626], [-74.1327745789507, 40.61741596673471], [-74.13907040403818, 40.6121662800719], [-74.14601015588862, 40.60741172701289], [-74.15352703346274, 40.6031979882441], [-74.16154873309553, 40.59956554070861], [-74.16999814141782, 40.5965492717496], [-74.17879407261853, 40.59417814675472], [-74.18785204315418, 40.59247493336496], [-74.19708507671841, 40.591455984784545], [-74.20530503861373, 40.59116945469435], [-74.2044415020803, 40.58930999849078], [-74.20220537193117, 40.58240549754237], [-74.20086801988377, 40.575367117031334], [-74.20044204722636, 40.568262670401026], [-74.20093126792706, 40.561160586289915], [-74.20233068299449, 40.5541292492094], [-74.20462653965959, 40.54723634146799], [-74.2077964743855, 40.540548192657674], [-74.21180973792515, 40.534129142915155], [-74.21662749989036, 40.52804092600975], [-74.22220322958043, 40.52234207809333], [-74.22848314914395, 40.5170873776799], [-74.23540675452145, 40.51232732210548], [-74.24290739904065, 40.50810764535706], [-74.25091293401373, 40.504468881756374], [-74.25934640021842, 40.50144597954351], [-74.26812676373406, 40.4990679679323], [-74.27716968925118, 40.49735768070645], [-74.28638834367798, 40.49633153889964], [-74.29569422263172, 40.49599939455445], [-74.30499799222638, 40.496364436993744], [-74.31421033845, 40.497423162463676], [-74.32324281636762, 40.499165407427185], [-74.33200869138587, 40.5015744452043], [-74.34042376487638, 40.504627145075354], [-74.34840717657463, 40.5082941923893], [-74.35588217634937, 40.51254036765767], [-74.36277685817657, 40.51732488206773], [-74.36902484944788, 40.5226017663224], [-74.37456594909996, 40.52832030921338], [-74.37934670846363, 40.53442554186015], [-74.3833209492021, 40.54085876310981], [-74.38645021323258, 40.54755810118949], [-74.38870414010438, 40.55445910634368], [-74.3900607679352, 40.561495368873125], [-74.390506754684, 40.5685991567265], [-74.39003751725791, 40.57570206658146], [-74.3886572867078, 40.58273568219404], [-74.3863790785572, 40.58963223369395], [-74.38322457812347, 40.596325251462936], [-74.37922394152358, 40.602750208254506], [-74.37441551389831, 40.60884514329631], [-74.36884546723167, 40.61455126226358], [-74.36256736097495, 40.61981350722076], [-74.3556416294977, 40.62458109089956], [-74.3528964266308, 40.62612700308591], [-74.35346555165611, 40.626853209294595], [-74.35502343098094, 40.62937358770546], [-74.36183736311551, 40.63323666021573]]], [[[-75.11371475171822, 40.66352407403359], [-75.11764829658927, 40.65707415186993], [-75.12239223990896, 40.65094871983894], [-75.12790075221834, 40.645206674618855], [-75.13412069290169, 40.63990321185989], [-75.14099212537926, 40.63508929858445], [-75.14844889562556, 40.6308111864906], [-75.15641926839668, 40.6271099706875], [-75.16482661507627, 40.62402119795467], [-75.1735901466337, 40.62157452814475], [-75.18262568482838, 40.61979345184945], [-75.19184646449496, 40.618695066922875], [-75.20116395950292, 40.61828991591067], [-75.210488724802, 40.618581885871905], [-75.2197312468432, 40.619568171507346], [-75.22880279460173, 40.621239301928355], [-75.2376162634246, 40.62357923081738], [-75.24608700398167, 40.62656548915159], [-75.25413362871319, 40.63016939908665], [-75.26167878834158, 40.634356347035286], [-75.26864991124795, 40.639086113427986], [-75.27497989880543, 40.64431325611533], [-75.2806077701122, 40.64998754386892], [-75.28547924997446, 40.656054435962666], [-75.28954729445385, 40.66245560337504], [-75.29277254881441, 40.669129486747444], [-75.29512373327621, 40.67601188587089], [-75.29657795260735, 40.68303657515307], [-75.29712092625658, 40.69013593924845], [-75.29674713644422, 40.69724162281405], [-75.29545989238167, 40.704285188190156], [-75.29327130957637, 40.71119877469815], [-75.29020220399181, 40.717915753200245], [-75.28628190166249, 40.72437136958049], [-75.2815479652067, 40.730503370881834], [-75.2760458395223, 40.736252607974045], [-75.26982841978592, 40.741563608828265], [-75.26295554569323, 40.7463851167377], [-75.2554934266645, 40.750670588146534], [-75.2475140034895, 40.7543786451304], [-75.23909425258307, 40.757473478005764], [-75.23031543966201, 40.75992519403057], [-75.221262330222, 40.7617101086883], [-75.21202236468443, 40.76281097661736], [-75.20268480648672, 40.76321715985075], [-75.19333987170181, 40.76292473166136], [-75.18407784898638, 40.76193651495805], [-75.17498821877008, 40.76026205484021], [-75.16615878060801, 40.757917525585015], [-75.15767479752442, 40.75492557300635], [-75.14961816598107, 40.75131509377678], [-75.14206661980872, 40.74712095393922], [-75.13509297605297, 40.74238364944445], [-75.12876443020998, 40.73714891212726], [-75.12314190777158, 40.73146726507319], [-75.11827947837274, 40.72539353182131], [-75.11422383814416, 40.71898630429374], [-75.11101386513202, 40.71230737473432], [-75.10868025186349, 40.7054211372726], [-75.10724521832232, 40.69839396500471], [-75.10672230776522, 40.691293568694974], [-75.10711626696406, 40.68418834335339], [-75.10842301161489, 40.67714670903064], [-75.11062967681842, 40.67023645219685], [-75.11371475171822, 40.66352407403359]]], [[[-73.95696363847713, 40.19183161818033], [-73.96177959358515, 40.18575364782242], [-73.96734823668216, 40.18006670785598], [-73.97361586220619, 40.174825462956946], [-73.9805220876919, 40.17008028205545], [-73.98800043607353, 40.16587675735614], [-73.99597897456444, 40.162255269330956], [-74.00438100401463, 40.15925060171917], [-74.01312579224006, 40.156891610095236], [-74.02212934446553, 40.15520094706193], [-74.03130520373139, 40.15419484659893], [-74.04056527387955, 40.15388296954922], [-74.04982065755927, 40.15426831166262], [-74.05898250157713, 40.15534717504127], [-74.06796284185921, 40.15710920325111], [-74.07667544029468, 40.15953747977996], [-74.08503660579285, 40.162608688942306], [-74.09296599200593, 40.166293337756855], [-74.10038736434994, 40.17055603676053], [-74.10722932919525, 40.175355837176134], [-74.11342601839665, 40.180646621324485], [-74.11891772268866, 40.186377542670954], [-74.12365146788619, 40.192493511423805], [-74.1275815283011, 40.198935721163274], [-74.1306698723106, 40.205642211579615], [-74.13288653559194, 40.21254846203857], [-74.13420991816672, 40.219588010379674], [-74.13462700207316, 40.2266930910879], [-74.13413348720285, 40.2337952867671], [-74.13273384359391, 40.24082618668751], [-74.13044127925961, 40.24771804608059], [-74.12730645792477, 40.254343504497385], [-74.12795094788183, 40.254794844309814], [-74.13415645112043, 40.26008448615373], [-74.139656277765, 40.26581438125091], [-74.14439737528373, 40.271929450019286], [-74.1483339468367, 40.27837089503159], [-74.15142789754243, 40.28507676365435], [-74.15364920834277, 40.29198254152747], [-74.15497623360251, 40.29902177129111], [-74.15539591925561, 40.306126690701426], [-74.15490393902876, 40.31322888406476], [-74.15350474702913, 40.320259940762874], [-74.15121154577064, 40.327152114543274], [-74.14804616952613, 40.33383897720994], [-74.14403888372303, 40.34025606037269], [-74.1392281019388, 40.346341478999236], [-74.13366002289125, 40.35203653066286], [-74.127388190648, 40.35728626458965], [-74.12047298208749, 40.362040014882474], [-74.11298102642252, 40.36625189263108], [-74.10498456233417, 40.36988123200756], [-74.09656073894962, 40.37289298588938], [-74.08779086752189, 40.375258067044115], [-74.07875963122258, 40.376953631447456], [-74.069554260934, 40.37796330088101], [-74.06026368531344, 40.378277322564124], [-74.05097766369867, 40.37789266420834], [-74.04178591061947, 40.37681304353412], [-74.03277722077797, 40.375048891953796], [-74.02403860335315, 40.372617252789986], [-74.01565443437761, 40.36954161506202], [-74.00770563572593, 40.36585168452224], [-74.00026888894737, 40.36158309425484], [-73.99341589177911, 40.35677705775442], [-73.98721266469155, 40.35147996797155], [-73.98171891425613, 40.34574294634467], [-73.97698745949482, 40.3396213463235], [-73.97306372667883, 40.33317421632635], [-73.96998531730324, 40.32646372745593], [-73.96778165318283, 40.319554571624344], [-73.966473701804, 40.3125133360032], [-73.96607378423897, 40.30540785991947], [-73.96658546708994, 40.29830658045923], [-73.96800353909433, 40.2912778731203], [-73.97031407219477, 40.284389393871486], [-73.97346558382216, 40.27776832477483], [-73.9728219131232, 40.27731613128648], [-73.96662750681867, 40.2720179211478], [-73.9611418697485, 40.266279895989264], [-73.95641774293337, 40.26015741859724], [-73.95250048242943, 40.253709545513495], [-73.94942762796519, 40.24699845468542], [-73.94722854861008, 40.24008884353699], [-73.94592416860527, 40.23304730337676], [-73.94552677565908, 40.22594167626352], [-73.94603991317278, 40.21884040059112], [-73.94745835702648, 40.211811851734396], [-73.94976817672848, 40.20492368411267], [-73.9529468799242, 40.19824218098435], [-73.95696363847713, 40.19183161818033]]]], "type": "MultiPolygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var heat_map_c6e4281fbc53148183f7eac7e8a19816 = L.heatLayer(
+                [[40.690754, -75.201923], [40.720772, -74.269284], [40.882884, -74.066849], [40.903839, -74.071966], [40.859574, -73.972432], [40.812663, -74.216017], [39.357377, -74.42365], [39.71909, -75.022425], [39.41918, -74.554995], [40.334285, -74.486746], [40.660878, -74.269464], [39.832875, -75.101788], [39.502548, -75.041869], [40.148734, -74.700642], [40.040754, -74.912595], [39.865436, -75.103077], [40.56847, -74.295474], [40.305806, -74.060734], [40.689168, -74.301325], [40.77525, -74.086556], [40.248342, -74.770549], [39.358975, -74.427559], [40.936401, -74.141912], [40.92415, -74.08424], [40.77544, -74.186788], [39.84754, -74.98935], [40.226356, -74.040076], [40.6636, -74.206087], [40.290606, -74.687318]],
+                {"blur": 25, "maxZoom": 18, "minOpacity": 0.5, "radius": 60}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var tile_layer_4d673dded02faf814b411c08d11941cc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var tile_layer_6d8ef80de5b81bc76ba683c7b977afc6 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+        
+    
+            var layer_control_9a08723108cd6349a4352966ec1a1178 = {
+                base_layers : {
+                    "Carto Positron" : tile_layer_4b9159b00f9ef029eb18ab59578c4f50,
+                    "OpenStreetMap" : tile_layer_4d673dded02faf814b411c08d11941cc,
+                    "Stamen Terrain" : tile_layer_6d8ef80de5b81bc76ba683c7b977afc6,
+                },
+                overlays :  {
+                    "5-mile Buffer" : feature_group_bd346c2d436f806ad0b78c939578ad0f,
+                    "Dispensary Heat Map" : heat_map_c6e4281fbc53148183f7eac7e8a19816,
+                },
+            };
+            L.control.layers(
+                layer_control_9a08723108cd6349a4352966ec1a1178.base_layers,
+                layer_control_9a08723108cd6349a4352966ec1a1178.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_913ecd7b352093bef14c84eddb9cd6ac);
+            tile_layer_4d673dded02faf814b411c08d11941cc.remove();
+            tile_layer_6d8ef80de5b81bc76ba683c7b977afc6.remove();
+            tile_layer_4b9159b00f9ef029eb18ab59578c4f50.remove();
+        
+</script>
+</html>
